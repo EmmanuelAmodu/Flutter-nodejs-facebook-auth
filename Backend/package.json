@@ -1,0 +1,41 @@
+{
+  "name": "bankend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js --env prod",
+    "dev": "nodemon index.js --env dev",
+    "dev-test": "jest --watchAll --coverage --forceExit --detectOpenHandles --maxWorkers=1",
+    "test": "jest --forceExit --detectOpenHandles --maxWorkers=1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "compression": "^1.7.4",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "fawn": "^2.1.5",
+    "helmet": "^3.21.2",
+    "joi": "^14.3.1",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.8.5",
+    "morgan": "^1.9.1",
+    "oauth": "^0.9.15",
+    "pug": "^2.0.4",
+    "request": "^2.88.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2"
+  }
+}
